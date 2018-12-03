@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine'
-            args '-v /root/.m2:/root/.m2 -v /var/lib/jenkins/workspace/maven_generic_webhook_test/jenkins_java:/var/lib/jenkins/workspace/maven_generic_webhook_test/jenkins_java -w /var/lib/jenkins/workspace/maven_generic_webhook_test/jenkins_java'
+            args '-v /root/.m2:/root/.m2'
         }
     }
    // triggers {
