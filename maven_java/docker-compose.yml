@@ -1,0 +1,8 @@
+version: '2'
+services:
+
+  maven:
+    image: rcx-test-vf:maven
+    build:
+      context: .
+      dockerfile: Dockerfile.multi
